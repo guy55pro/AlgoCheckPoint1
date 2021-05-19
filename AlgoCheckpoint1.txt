@@ -1,0 +1,27 @@
+
+
+.VAR:
+String str1 := "Hello World"; 
+a,b : INTEGER := 0;
+char, word : INTEGER := 0;
+
+.BEGIN:
+
+  FOR a FROM 1 TO str1.length 
+	STEP 1  DO 
+   IF(str1[a] != ' ' AND str1[a] != '.') THEN
+    char := char++;   
+   END-IF
+  END-FOR
+
+  FOR b FROM 1 TO str1.length 
+	STEP 1  DO 
+   IF(string1[a] == ' ') THEN
+    word := word++; 
+   END-IF
+  END-FOR
+
+Write('Characters Number :', char)
+Write('Words Number :', word)
+  
+END
